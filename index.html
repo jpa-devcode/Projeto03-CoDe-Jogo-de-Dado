@@ -10,11 +10,13 @@
   <body>
     <h1>Jogo de Dado</h1>
     <label for="numero">Informe o número (1 a 6)</label>
-    <input type="text" id="numero" />
+    <input type="number" id="numero" min="1" max="6" />
     <div>
-      <button id="jogarDado">Jogar</button>
+      <button onClick="jogarDado()" id="jogarDado">Jogar</button>
     </div>
     <div id="imagemDado">
+      <span id="numeroDoJogador"></span>
+      <span id="comparacao"></span>
       <img src="img/face_01.png" alt="dado" id="face" />
     </div>
     <script src="js/main.js"></script>
