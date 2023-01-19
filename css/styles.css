@@ -1,5 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cor-primaria);
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin-top: 25px;
+  font-size: 100px;
+  text-align: center;
+}
+
+#containerPrincipal {
+  text-align: center;
+}
+
+#containerUm {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-size: 40px;
+}
+
+input {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  padding: 5px, 5px, 5px, 8px;
+  border-radius: 10px;
+  font-size: 25px;
+  outline: 1;
+}
+
+#containerDois {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#containerTres {
+  margin-top: 50px;
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #b4b4b4;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: solid 1px #b4b4b4;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #75cc75;
+  color: #fff;
+  border: solid 1px #75cc75;
+}
+
+#jogada {
+  font-size: 70px;
+}
+
+#de {
+  font-size: 70px;
+}
+
+#quantidadeDeJogadas {
+  font-size: 70px;
+  color: #ff0000;
+}
+
+#totalDeJogadas {
+  font-size: 70px;
+  color: #ff0000;
+}
+
+#descricaoDeAcertos {
+  margin-top: 50px;
+  font-size: 35px;
+}
+
+#numeroDeAcertos {
+  margin-top: 50px;
+  font-size: 35px;
+}
+
 img {
-  width: 25%;
-  height: 25%;
-  margin-top: 100px;
+  width: 10%;
+  height: 10%;
+  margin-top: 50px;
+  animation: rotate-hor-center 0.35s infinite both;
+}
+
+@keyframes rotate-hor-center {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

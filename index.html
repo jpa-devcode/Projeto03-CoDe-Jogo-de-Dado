@@ -8,17 +8,34 @@
     <title>Jogo de Dado</title>
   </head>
   <body>
-    <h1>Jogo de Dado</h1>
-    <label for="numero">Informe o número (1 a 6)</label>
-    <input type="number" id="numero" min="1" max="6" />
-    <div>
-      <button onClick="jogarDado()" id="jogarDado">Jogar</button>
+    <div id="containerPrincipal">
+      <h1>Jogo de Dado</h1>
+
+      <form id="jogarDado">
+        <div id="containerUm">
+          <label for="numero">Informe um número (1 a 6)&nbsp</label>
+          <input type="number" id="numero" min="1" max="6" required />
+        </div>
+        <div id="containerDois">
+          <button type="submit">Jogar o dado</button>
+          <button id="reiniciarJogo">Reiniciar</button>
+        </div>
+      </form>
+
+      <img src="img/face_01.png" alt="dado" id="faceDoDado" />
+      <div id="containerTres">
+        <span id="jogada">Jogada&nbsp</span>
+        <span id="quantidadeDeJogadas">0</span>
+        <span id="de">&nbspde&nbsp </span>
+        <span id="totalDeJogadas">6</span>
+        <br />
+        <br />
+        <br />
+        <span id="descricaoDeAcertos">Acertos do jogador: </span>
+        <span id="numeroDeAcertos">0</span>
+      </div>
+      <script src="js/main.js"></script>
+      <div></div>
     </div>
-    <div id="imagemDado">
-      <span id="numeroDoJogador"></span>
-      <span id="comparacao"></span>
-      <img src="img/face_01.png" alt="dado" id="face" />
-    </div>
-    <script src="js/main.js"></script>
   </body>
 </html>
