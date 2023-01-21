@@ -5,6 +5,13 @@ function reiniciarJogo() {
   window.location.reload(true);
 }
 
+function estilizarBotaoDesativado(botao) {
+  document.getElementById(botao).style.cursor = 'default';
+  document.getElementById(botao).style.backgroundColor = '#b4b4b4';
+  document.getElementById(botao).style.color = '#000';
+  document.getElementById(botao).style.borderColor = '#b4b4b4';
+}
+
 document.getElementById('faceDoDado').style.animationPlayState = 'paused';
 
 function jogarDado(event) {
@@ -20,55 +27,34 @@ function jogarDado(event) {
     }
 
     document.getElementById('faceDoDado').style.animationPlayState = 'running';
-
-    switch (jogadaDoDado) {
-      case 1:
-        document.getElementById('faceDoDado').src = 'img/face_01.png';
-        break;
-      case 2:
-        document.getElementById('faceDoDado').src = 'img/face_02.png';
-        break;
-      case 3:
-        document.getElementById('faceDoDado').src = 'img/face_03.png';
-        break;
-      case 4:
-        document.getElementById('faceDoDado').src = 'img/face_04.png';
-        break;
-      case 5:
-        document.getElementById('faceDoDado').src = 'img/face_05.png';
-        break;
-      case 6:
-        document.getElementById('faceDoDado').src = 'img/face_06.png';
-        break;
-    }
+    document.getElementById('faceDoDado').src = `img/face_0${jogadaDoDado}.png`;
 
     setTimeout(function () {
       document.getElementById('faceDoDado').style.animationPlayState = 'paused';
+
+      if (jogadaDoDado == numeroDoJogador) {
+        acertosDoJogador += 1;
+        document.getElementById('score').innerHTML = acertosDoJogador;
+      }
     }, 1000);
 
     quantidadeDeJogadas += 1;
 
     document.getElementById('quantidadeDeJogadas').innerHTML =
       quantidadeDeJogadas;
-
-    if (jogadaDoDado == numeroDoJogador) {
-      acertosDoJogador += 1;
-      document.getElementById('numeroDeAcertos').innerHTML = acertosDoJogador;
-    }
   }
 
   if (quantidadeDeJogadas == 6) {
-    document.getElementById('jogarDado').style.cursor = 'default';
-    document.getElementById('jogarDado').style.backgroundColor = '#b4b4b4';
-    document.getElementById('jogarDado').style.color = '#000';
-    document.getElementById('jogarDado').style.borderColor = '#b4b4b4';
-  }
+    estilizarBotaoDesativado('botaoJogarDado');
 
-  if (quantidadeDeJogadas == 6) {
+    document
+      .getElementById('botaoReiniciarJogo')
+      .addEventListener('click', reiniciarJogo);
+    document.getElementById('botaoReiniciarJogo').style.pointerEvents = 'auto';
   }
 }
+// estilizarBotaoDesativado('botaoReiniciarJogo');
 
 document.getElementById('jogarDado').addEventListener('submit', jogarDado);
-document
-  .getElementById('reiniciarJogo')
-  .addEventListener('click', reiniciarJogo);
+
+document.getElementById('botaoReiniciarJogo').style.pointerEvents = 'none';
