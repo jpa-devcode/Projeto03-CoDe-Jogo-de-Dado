@@ -1,6 +1,6 @@
 # Jogo de Dado
 
-O referido projeto faz parte das Missões/Desafios da Mentoria "Conquiste sua Vaga".
+Este projeto faz parte das Missões/Desafios da Mentoria "Conquiste sua Vaga".
 
 :construction: Projeto finalizado :construction:
 
