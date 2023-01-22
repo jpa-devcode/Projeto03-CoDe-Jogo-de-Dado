@@ -7,9 +7,9 @@ function reiniciarJogo() {
 
 function estilizarBotaoDesativado(botao) {
   document.getElementById(botao).style.cursor = 'default';
-  document.getElementById(botao).style.backgroundColor = '#b4b4b4';
-  document.getElementById(botao).style.color = '#000';
-  document.getElementById(botao).style.borderColor = '#b4b4b4';
+  document.getElementById(botao).style.backgroundColor = '#264f26';
+  document.getElementById(botao).style.color = '#fff';
+  document.getElementById(botao).style.borderColor = '#264f26';
 }
 
 document.getElementById('dado').style.animationPlayState = 'paused';
@@ -53,8 +53,6 @@ function jogarDado(event) {
     document.getElementById('botaoReiniciarJogo').style.pointerEvents = 'auto';
   }
 }
-// estilizarBotaoDesativado('botaoReiniciarJogo');
 
 document.getElementById('jogarDado').addEventListener('submit', jogarDado);
-
 document.getElementById('botaoReiniciarJogo').style.pointerEvents = 'none';

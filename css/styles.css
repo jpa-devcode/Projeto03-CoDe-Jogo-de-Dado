@@ -17,7 +17,7 @@ h1 {
   color: #fff;
 }
 
-#jogarDado {
+#jogarDadoForm {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -37,12 +37,6 @@ h1 {
 }
 
 #containerDois {
-  /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: 30px; */
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -51,6 +45,19 @@ h1 {
   align-content: center;
 }
 
+#containerTres {
+  color: #fff;
+  font-size: 30px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+#containerQuatro {
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 15px;
+  text-align: center;
+}
 label {
   font-size: 30px;
 }
@@ -78,7 +85,6 @@ input:focus {
   background-color: #264f26;
   font-size: 20px;
   text-transform: uppercase;
-  font-weight: bold;
   border: solid 1px #264f26;
   border-radius: 15px;
   cursor: pointer;
@@ -99,7 +105,6 @@ input:focus {
   background-color: #264f26;
   font-size: 20px;
   text-transform: uppercase;
-  font-weight: bold;
   border: solid 1px #264f26;
   border-radius: 15px;
   cursor: pointer;
@@ -113,6 +118,23 @@ input:focus {
   color: #000;
 }
 
+#tabuleiro {
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 400px;
+  margin-right: 400px;
+  border: solid 50px #fff;
+  border-style: ridge;
+  background-color: #264f26;
+}
+
+#dado {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  width: 15%;
+  height: 15%;
+  animation: rotate-hor-center 0.35s infinite both;
+}
 #quantidadeDeJogadas {
   font-size: 30px;
   color: #ff0000;
@@ -127,21 +149,6 @@ input:focus {
   color: #ff0000;
 }
 
-#containerTres {
-  color: #fff;
-  font-size: 30px;
-  padding-top: 15px;
-  text-align: center;
-}
-
-#dado {
-  margin-top: 90px;
-  margin-bottom: 90px;
-  width: 15%;
-  height: 15%;
-  animation: rotate-hor-center 0.35s infinite both;
-}
-
 @keyframes rotate-hor-center {
   0% {
     transform: rotate(0);
@@ -150,21 +157,4 @@ input:focus {
   100% {
     transform: rotate(360deg);
   }
-}
-
-#containerQuatro {
-  color: #fff;
-  font-size: 30px;
-  padding-bottom: 15px;
-  text-align: center;
-}
-
-#tabuleiro {
-  text-align: center;
-  margin-top: 70px;
-  margin-left: 400px;
-  margin-right: 400px;
-  border: solid 50px #fff;
-  border-style: ridge;
-  background-color: #264f26;
 }
