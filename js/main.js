@@ -12,7 +12,7 @@ function estilizarBotaoDesativado(botao) {
   document.getElementById(botao).style.borderColor = '#b4b4b4';
 }
 
-document.getElementById('faceDoDado').style.animationPlayState = 'paused';
+document.getElementById('dado').style.animationPlayState = 'paused';
 
 function jogarDado(event) {
   event.preventDefault();
@@ -26,11 +26,11 @@ function jogarDado(event) {
       return;
     }
 
-    document.getElementById('faceDoDado').style.animationPlayState = 'running';
-    document.getElementById('faceDoDado').src = `img/face_0${jogadaDoDado}.png`;
+    document.getElementById('dado').style.animationPlayState = 'running';
+    document.getElementById('dado').src = `img/face_0${jogadaDoDado}.png`;
 
     setTimeout(function () {
-      document.getElementById('faceDoDado').style.animationPlayState = 'paused';
+      document.getElementById('dado').style.animationPlayState = 'paused';
 
       if (jogadaDoDado == numeroDoJogador) {
         acertosDoJogador += 1;
