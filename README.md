@@ -21,4 +21,4 @@ O projeto se trata de um Jogo de Dado, onde o jogador terá que seguir as regras
 
 # Autor
 
-| [<img src="https://avatars.githubusercontent.com/u/110256971?s=400&u=10bb109729dc2c3cefc313e9db2b1a4cab048f1c&v=4" width=115><br><sub>Jezimiel Marcondes</sub>](https://github.com/jezimielmarcondes) |
+[<img src="https://avatars.githubusercontent.com/u/110256971?s=400&u=10bb109729dc2c3cefc313e9db2b1a4cab048f1c&v=4" width=115><br><sub>Jezimiel Marcondes</sub>](https://github.com/jezimielmarcondes)
