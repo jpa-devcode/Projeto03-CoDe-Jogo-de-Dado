@@ -54,5 +54,5 @@ function jogarDado(event) {
   }
 }
 
-document.getElementById('jogarDado').addEventListener('submit', jogarDado);
+document.getElementById('jogarDadoForm').addEventListener('submit', jogarDado);
 document.getElementById('botaoReiniciarJogo').style.pointerEvents = 'none';
